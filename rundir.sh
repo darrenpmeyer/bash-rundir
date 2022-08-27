@@ -4,9 +4,10 @@ set -uo pipefail
 # Print usage message and exit
 usage() {
 	>&2 cat <<USAGE
-Usage: ${0:-} DIR
+Usage: ${0:-} DIR [com_args]
 
-    DIR    directory containing scripts to run
+    DIR       directory containing scripts to run
+    com_args  args to pass to EVERY script that gets run
 USAGE
 
 exit ${1:-1}
